@@ -1,3 +1,4 @@
+// function for hiding all the cards
 function hide(){
     let elements = document.querySelectorAll('.hidden');
     for (let i =0 ;i < elements.length ; i++){
@@ -5,6 +6,7 @@ function hide(){
         // console.log(elements[i]);
     }
 }
+// function for showing all the cards
 function showall(){
     let elements = document.querySelectorAll('.hidden');
     for (let i =0 ;i < elements.length ; i++){
@@ -13,54 +15,36 @@ function showall(){
     }
 }
 document.getElementById("sub-items").onchange = function() {
-
+    // hiding all
     hide();
-
-
-
-
+    //for subject
     if (this.value == 'subject') {
-        var optionID=document.getElementById('subject');
-        // alert(optionID.value);
-        // document.querySelector('.hide').style.display = "block";
         hide();
         showall();
-        
-
     }
+    // for english
     if (this.value == 'english') {
-        var optionID=document.getElementById('english');
-        // alert(optionID.innerHTML);
-        // document.querySelector('.hide').style.display = "none";
         hide();
         var engcard = document.querySelectorAll('.english-card');
         for (let i = 0; i < engcard.length; i++) {
             engcard[i].style.display = "block";
-            // console.log(engcard[i]);
           }
     }
+    // for maths
     if (this.value == 'maths') {
-        var optionID=document.getElementById('maths');
-        // alert(optionID.value);
-        // document.querySelector('.hide').style.display = "none";
         hide();
         var mathscard = document.querySelectorAll('.maths-card');
         for (let i = 0; i < mathscard.length; i++) {
             mathscard[i].style.display = "block";
-            // console.log(engcard[i]);
           }
 
     }
+    //for geography
     if (this.value == 'geography') {
-        var optionID=document.getElementById('geography');
-        // alert(optionID.value);
-        // document.querySelector('.hide').style.display = "none";
         hide();
         var geocard = document.querySelectorAll('.geography-card');
         for (let i = 0; i < geocard.length; i++) {
             geocard[i].style.display = "block";
-            // console.log(engcard[i]);
           }
-
     }
 }

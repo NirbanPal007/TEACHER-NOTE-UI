@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <!-- navigation bar -->
     <header id="global-navigation" class="header-global ">
         <div class="top-head"></div>
         <!--my changes add conatiner class here -->
@@ -29,14 +30,17 @@
             </nav>
         </div>
     </header>
+    <!-- dropdown row -->
     <div class="row">
         <div class="col-md-12 bar-ht">
+            <!-- course dropdown -->
             <select class="border-ddown mr-2 dropdownMenuLink" id="course-items" name="dog-names">
                 <option value="rigatoni">Course</option>
                 <option value="dave">WBCS</option>
                 <option value="pumpernickel">Banking</option>
                 <option value="reeses">Railway</option>
             </select>
+            <!-- subject dropdown -->
             <select class="border-ddown ml-2 dropdownMenuLink" id="sub-items" name="dog-names" onchange="handleSelect()">
                 <option value="subject" id="subject">Subject</option>
                 <option value="english" id="english">English</option>
@@ -46,6 +50,7 @@
         </div>
     </div>
     <div class="container-fluid">
+        <!-- subjects card rows -->
         <div class="row my-4">
             <div class="col-md-4 mb-3 english-card hidden">
                 <div class="card flex-md-row box-shadow h-md-250">
@@ -350,6 +355,7 @@
             </div>
         </div>
     </div>
+    
     <script src="https://kit.fontawesome.com/735bfd37ee.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
