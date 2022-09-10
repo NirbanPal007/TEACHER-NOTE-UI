@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.bar-ht{
+    height: 63px;
+    border: 1px solid #FEF0F1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FEF0F1;
+    box-shadow: 0px 2px 5px 5px #FBEBEB;
+}
+.container-fluid{
+    padding-right: 90px !important;
+    padding-left: 90px !important;
+}
+.realsize{
+    width: 380px;
+    height: 160px;
+}
+.card-text{
+    font-size: 12px;
+    font-weight: 600;
+    color: #F53D42;
+}
+.teac-color{
+    color:#606060;
+}
+.row{
+    margin: 0;
+}
+.b-color{
+    background-color: #FDF0F1;
+    margin-left: 20px;
+}
+.clock-date{
+    font-size: 12px;
+}
+.btn-spec{
+    border-radius: 17px;
+    padding: 4px 28px;
+    background-color: #EF6F72;
+    color: white;
+    box-shadow: 0px 3px 5px 2px #f8c3c4;
+}
+.card{
+    border: 1px solid #EF6F72E8;
+    border-radius: 14px;
+}
+.dropdownMenuLink{
+    width: 24%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 31px;
+}
+.dropdown{
+    width: 22%;
+    display: inline-block;
+}
+.border-ddown{
+    border: 1px solid #EF6F72;
+    border-radius: 10px;
+    color: #585858;
+    outline: none;
+    color: #585858;
+    background-color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+@media only screen and (min-width: 1200px) {
+    .logo img {
+        position: absolute;
+        left: 17px;  
+    }
+    
+  }
+
+@media only screen and (max-width: 769px){
+    
+    .header-global .wrapper-header {
+        width: 0px !important;
+        padding: 20px 5px 0px 20px !important;
+        float: left !important;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width:933px){
+    .respo{
+        width: 100%;
+    }
+    .btn-spec {
+        padding: 4px 12px;
+    }
+  }
+
+  @media only screen and (max-width: 450px){
+    .container-fluid {
+        padding-right: 35px !important;
+        padding-left: 35px !important;
+    }
+}
+/* .hide{
+    display: none;
+} */
+.english-card .maths-card .geography-card{
+    display: block !important;
+}
+
+
